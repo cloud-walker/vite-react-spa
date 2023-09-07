@@ -1,3 +1,3 @@
 export const App = () => {
-  return <>hello</>
+  return <h1 className="underline">hello</h1>
 }
