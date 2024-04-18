@@ -1,7 +1,7 @@
-import { expect, test, vi } from 'vitest'
+import {expect, test, vi} from 'vitest'
 
-import { App } from './App'
-import { render, screen, user } from './testing-library'
+import {App} from './App'
+import {render, screen, user} from './testing-library'
 
 test('works properly', async () => {
   const handleClick = vi.fn()
@@ -9,6 +9,6 @@ test('works properly', async () => {
 
   expect(screen.getByText('hello')).toBeInTheDocument()
 
-  await user.click(screen.getByRole('button', { name: 'click me' }))
+  await user.click(screen.getByRole('button', {name: 'click me'}))
   expect(handleClick).toHaveBeenCalledOnce()
 })

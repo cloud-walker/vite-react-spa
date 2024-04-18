@@ -1,4 +1,4 @@
-export const App = ({ onClick }: { onClick?: () => void }) => {
+export const App = ({onClick}: {onClick?: () => void}) => {
   return (
     <>
       <h1 className="underline">hello</h1>
