@@ -15,6 +15,9 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@cloudwalker/dom-utils':
+        specifier: ^0.2.0
+        version: 0.2.0
       '@testing-library/jest-dom':
         specifier: ^6.6.3
         version: 6.6.3
@@ -110,6 +113,9 @@ packages:
   '@babel/runtime@7.26.0':
     resolution: {integrity: sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==}
     engines: {node: '>=6.9.0'}
+
+  '@cloudwalker/dom-utils@0.2.0':
+    resolution: {integrity: sha512-fJRnICMR5pYbtdL6jK0IGSWNT+7OJQHXZ/m3R8GWAJQIBq3jfa/qFL27nvtJdOD1Pb7IzKjc3SmBEL1jc+wcwg==}
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -1780,6 +1786,8 @@ snapshots:
   '@babel/runtime@7.26.0':
     dependencies:
       regenerator-runtime: 0.14.1
+
+  '@cloudwalker/dom-utils@0.2.0': {}
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
