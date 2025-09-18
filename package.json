@@ -1,35 +1,36 @@
 {
-  "name": "vite-react-tailwind",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "format": "prettier --write .",
-    "type": "tsc",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "test": "vitest",
-    "dev": "vite",
-    "build": "vite build",
-    "validate": "prettier --check . && yarn lint && vitest run && yarn build && yarn type",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@cloudwalker/dom-utils": "^0.2.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.0.1",
-    "@testing-library/user-event": "^14.4.3",
-    "@total-typescript/ts-reset": "^0.6.1",
-    "@total-typescript/tsconfig": "^1.0.4",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react-swc": "^3.7.1",
-    "jsdom": "^25.0.1",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.10",
-    "vitest": "^2.1.4"
-  }
+	"name": "vite-react-tailwind",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"type": "tsc",
+		"lint": "biome check",
+		"lint:fix": "biome check --write",
+		"test": "vitest",
+		"dev": "vite",
+		"build": "vite build",
+		"validate": "pnpm type && biome check && vitest run && pnpm build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.4",
+		"@cloudwalker/dom-utils": "^0.2.0",
+		"@testing-library/jest-dom": "^6.6.3",
+		"@testing-library/react": "^16.0.1",
+		"@testing-library/user-event": "^14.4.3",
+		"@total-typescript/ts-reset": "^0.6.1",
+		"@total-typescript/tsconfig": "^1.0.4",
+		"@types/react": "^18.3.12",
+		"@types/react-dom": "^18.3.1",
+		"@vitejs/plugin-react-swc": "^3.7.1",
+		"jsdom": "^25.0.1",
+		"typescript": "^5.6.3",
+		"vite": "^5.4.10",
+		"vitest": "^2.1.4"
+	}
 }
